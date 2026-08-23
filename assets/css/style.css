@@ -547,6 +547,11 @@ body {
 .brand-item {
   min-width: calc(50% - 10px);
   scroll-snap-align: start;
+  color: var(--white);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .brand-item > img { margin-inline: auto; }
@@ -943,6 +948,60 @@ body {
   padding: 40px 15px;
   margin-block-start: -55px;
   border-radius: 80px;
+}
+
+/*-----------------------------------*\
+  #PRIVACY POLICY
+\*-----------------------------------*/
+
+.privacy-page .hero {
+  min-height: 0;
+  padding-block: 150px 70px;
+}
+
+.privacy-page .hero-content { max-width: 760px; }
+
+.privacy-page .hero-title { margin-block-end: 14px; }
+
+.privacy-content {
+  background-color: var(--white);
+  padding-block: 80px;
+}
+
+.privacy-card {
+  max-width: 920px;
+  margin-inline: auto;
+  padding: 45px;
+  background-color: var(--raisin-black-3);
+  border-radius: 18px;
+}
+
+.privacy-card .h2 {
+  font-size: var(--fs-4);
+  text-transform: uppercase;
+  margin-block-end: 24px;
+}
+
+.privacy-card .h3 {
+  margin-block: 36px 10px;
+  font-size: var(--fs-6);
+}
+
+.privacy-card .section-text {
+  color: var(--light-gray-1);
+  max-width: 100%;
+  font-size: var(--fs-8);
+  line-height: 1.8;
+}
+
+.privacy-card .card-link {
+  color: var(--marigold);
+  font-weight: var(--fw-700);
+}
+
+@media (max-width: 575px) {
+  .privacy-page .hero { padding-block: 120px 50px; }
+  .privacy-card { padding: 30px 22px; }
 }
 
 .newsletter .h2 {
