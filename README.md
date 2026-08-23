@@ -6,7 +6,6 @@
 
 <br />
 
-### Demo Screeshots
 
 ![Gamics Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
