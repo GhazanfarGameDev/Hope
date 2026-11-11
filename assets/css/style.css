@@ -1751,3 +1751,117 @@ body {
   .footer .container { grid-template-columns: 1fr 0.7fr 0.7fr 1fr; }
 
 }
+
+
+
+/*-----------------------------------*\
+  #GAME CARD PLAY LINK & HERO BUTTONS
+\*-----------------------------------*/
+
+.hero-content .btn { display: inline-grid; margin-block: 8px 0; margin-inline-end: 12px; }
+
+.latest-game-card .card-play-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-block-start: 14px;
+  color: var(--marigold);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.latest-game-card .card-play-link:is(:hover, :focus) { color: var(--white); }
+
+.latest-game-card .card-play-link ion-icon { font-size: 1.8rem; }
+
+
+
+/*-----------------------------------*\
+  #PRIVACY PAGE EXTRAS
+\*-----------------------------------*/
+
+.privacy-card strong { color: var(--white); }
+
+.privacy-list {
+  color: var(--light-gray-1);
+  font-size: var(--fs-8);
+  line-height: 1.8;
+  padding-inline-start: 22px;
+  margin-block: 10px 16px;
+  list-style: disc;
+}
+
+.privacy-list li { margin-block-end: 8px; }
+
+ol.privacy-list { list-style: decimal; }
+
+.privacy-summary,
+.privacy-toc {
+  background-color: var(--raisin-black-4);
+  border-inline-start: 4px solid var(--marigold);
+  border-radius: 10px;
+  padding: 22px 26px;
+  margin-block: 28px;
+}
+
+.privacy-summary-title {
+  font-family: var(--ff-oxanium);
+  color: var(--marigold);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}
+
+.privacy-toc ol {
+  list-style: decimal;
+  padding-inline-start: 22px;
+  columns: 2;
+  column-gap: 30px;
+  color: var(--light-gray-1);
+  font-size: var(--fs-9);
+  line-height: 2;
+}
+
+.privacy-toc a { color: var(--light-gray-1); }
+
+.privacy-toc a:is(:hover, :focus) { color: var(--marigold); }
+
+.privacy-card .h3[id] { scroll-margin-top: 110px; }
+
+.privacy-table-wrap { overflow-x: auto; margin-block: 14px 20px; }
+
+.privacy-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  color: var(--light-gray-1);
+  font-size: var(--fs-9);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.privacy-table th,
+.privacy-table td {
+  padding: 12px 14px;
+  border-block-end: 1px solid var(--white_10);
+  vertical-align: top;
+}
+
+.privacy-table th {
+  color: var(--marigold);
+  font-family: var(--ff-oxanium);
+  text-transform: uppercase;
+  font-size: var(--fs-10);
+}
+
+.privacy-page .copyright a { color: var(--marigold); }
+
+@media (max-width: 575px) {
+  .privacy-toc ol { columns: 1; }
+}
+
+.privacy-card .card-link { display: inline; }
+
+.privacy-card .section-text { text-align: left; margin-inline: 0; }
