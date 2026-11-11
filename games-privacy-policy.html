@@ -36,10 +36,10 @@
       <div class="privacy-summary">
         <p class="privacy-summary-title">At a glance</p>
         <ul class="privacy-list">
+          <li>Each game is different. The <a href="#games-covered" class="card-link">Games covered</a> table shows exactly which games have ads or analytics.</li>
           <li>Our games do not require an account, and we do not ask for your name, email address, phone number, contacts, photos or precise location.</li>
           <li>Game progress and settings are saved on your device.</li>
-          <li>We show ads with Google AdMob and use Google Firebase to understand how the games are played and to fix crashes. These services receive device information and identifiers such as your advertising ID.</li>
-          <li>Purchases are handled by Google Play. We never see your card or payment details.</li>
+          <li>Games with ads use Google AdMob, and games with analytics use Google Firebase. These services receive device information and identifiers such as your advertising ID. Games without them do not.</li>
           <li>We do not sell your personal information.</li>
           <li>You can ask us to delete your data at any time. See <a href="#data-deletion" class="card-link">Deleting your data</a>.</li>
         </ul>
@@ -55,7 +55,7 @@
           <li><a href="#third-parties">Third-party services</a></li>
           <li><a href="#ads">Advertising and consent</a></li>
           <li><a href="#permissions">App permissions</a></li>
-          <li><a href="#purchases">In-app purchases</a></li>
+          <li><a href="#future">Planned features</a></li>
           <li><a href="#children">Children</a></li>
           <li><a href="#retention">Data retention</a></li>
           <li><a href="#data-deletion">Your rights and deleting your data</a></li>
@@ -69,76 +69,82 @@
       <p class="section-text">Hope Technologies is an independent software development and mobile game publishing studio based at Walton Road, Lahore Cantt., Pakistan. We publish games on Google Play under the developer name “Hope Technologies”. We are responsible for the information processed by our games as described in this policy.</p>
 
       <h3 class="h3" id="games-covered">2. Games covered</h3>
-      <p class="section-text">This policy applies to every Hope Technologies game that links to it, including:</p>
-      <ul class="privacy-list">
-        <li><a href="https://play.google.com/store/apps/details?id=com.hopetechnologies.colorconveyor" class="card-link" target="_blank" rel="noopener">Color Conveyor</a> (com.hopetechnologies.colorconveyor)</li>
-      </ul>
-      <p class="section-text">New games are added to this list when they are released. If a game works differently from what is described here, its Google Play listing and in-game information will say so.</p>
+      <p class="section-text">This policy applies to every Hope Technologies game that links to it. The table shows what each game includes. Sections of this policy about ads or analytics apply only to games marked “Yes” for them.</p>
+      <div class="privacy-table-wrap"><table class="privacy-table">
+        <thead><tr><th>Game</th><th>Ads (AdMob)</th><th>Analytics (Firebase)</th><th>In-app purchases</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://play.google.com/store/apps/details?id=com.hopetechnologies.colorconveyor" class="card-link" target="_blank" rel="noopener">Color Conveyor</a><br>com.hopetechnologies.colorconveyor</td><td>No</td><td>No</td><td>No</td></tr>
+          <!-- NEW GAME ROW: copy the row above, change name/link/package, and set Yes/No -->
+        </tbody>
+      </table></div>
+      <p class="section-text">New games are added to this table when they are released.</p>
 
       <h3 class="h3" id="information">3. Information we process</h3>
-      <p class="section-text"><strong>Information you give us.</strong> If you email or call us for support, we receive your email address or phone number, your message and anything you attach, such as screenshots.</p>
-      <p class="section-text"><strong>Information stored on your device.</strong> Your game progress, coins, unlocked levels and settings (such as sound and vibration) are saved on your device. We do not receive this information. It is removed when you uninstall the game or clear its data.</p>
-      <p class="section-text"><strong>Information collected automatically by the services built into our games:</strong></p>
+      <p class="section-text"><strong>In all games:</strong></p>
       <ul class="privacy-list">
-        <li><strong>Device and app information:</strong> device model, Android version, language, screen size, app version and network type.</li>
-        <li><strong>Identifiers:</strong> your device’s Android advertising ID and app-instance identifiers created by Firebase.</li>
-        <li><strong>Approximate location:</strong> your general region (such as your country or city), worked out from your IP address. We do not collect GPS or precise location.</li>
-        <li><strong>Gameplay and usage:</strong> events such as levels started and completed, session length, and how you use game features.</li>
+        <li><strong>Information stored on your device:</strong> game progress, unlocked levels, coins and settings (such as sound and vibration). We do not receive this information. It is removed when you uninstall the game or clear its data.</li>
+        <li><strong>Technical information:</strong> our games are built with the Unity game engine. The engine and Google Play may process limited technical information, such as device model, Android version, app version and crash or performance data, to run the game and keep it stable.</li>
+        <li><strong>Information you give us:</strong> if you email or call us for support, we receive your email address or phone number, your message and anything you attach.</li>
+      </ul>
+      <p class="section-text"><strong>Only in games with ads or analytics</strong>, the services listed in section 5 also collect:</p>
+      <ul class="privacy-list">
+        <li><strong>Device and app information:</strong> device model, Android version, language, app version and network type.</li>
+        <li><strong>Identifiers:</strong> your Android advertising ID, app set ID and app-instance identifiers created by Firebase.</li>
+        <li><strong>Approximate location:</strong> your general region, worked out from your IP address. We never collect GPS or precise location.</li>
+        <li><strong>Gameplay and usage:</strong> events such as levels started and completed, session length, and taps.</li>
         <li><strong>Ad interactions:</strong> which ads were shown, viewed or tapped, and rewarded ads completed.</li>
-        <li><strong>Crash and performance data:</strong> crash logs, error reports and diagnostic information.</li>
-        <li><strong>Purchase information:</strong> if you buy something in a game, Google Play tells us which item was bought and gives us an order reference so we can deliver it.</li>
+        <li><strong>Crash and performance data:</strong> crash logs and diagnostic information.</li>
       </ul>
 
       <h3 class="h3" id="use">4. How we use information</h3>
       <ul class="privacy-list">
-        <li>To run the game, deliver purchased items and remember your settings.</li>
-        <li>To show ads, including rewarded ads that unlock in-game bonuses, measure their performance and prevent ad fraud.</li>
-        <li>To understand how players use the game so we can improve levels, difficulty and features.</li>
-        <li>To find and fix crashes and bugs.</li>
-        <li>To answer support requests and privacy requests.</li>
-        <li>To protect our games and players, and to meet our legal obligations.</li>
+        <li>To run the game and remember your progress and settings.</li>
+        <li>In games with ads: to show ads, including rewarded ads that unlock in-game bonuses, measure them and prevent ad fraud.</li>
+        <li>In games with analytics: to understand how players use the game so we can improve it, and to find and fix crashes.</li>
+        <li>To answer support and privacy requests, and to meet our legal obligations.</li>
       </ul>
-      <p class="section-text">We do not sell your personal information, and we do not use it to make decisions that have legal or similarly significant effects on you.</p>
+      <p class="section-text">We do not sell your personal information.</p>
 
       <h3 class="h3" id="third-parties">5. Third-party services</h3>
-      <p class="section-text">Our games use the following services, which process information on our behalf or under their own privacy policies:</p>
+      <p class="section-text">All games are distributed by <strong>Google Play</strong> and built with the <strong>Unity</strong> engine. Games marked in the table above also use:</p>
       <div class="privacy-table-wrap"><table class="privacy-table">
         <thead><tr><th>Service</th><th>Purpose</th><th>Information processed</th><th>Privacy policy</th></tr></thead>
         <tbody>
-          <tr><td>Google AdMob</td><td>Showing and measuring ads</td><td>Advertising ID, device and app information, IP address and approximate location, ad interactions</td><td><a href="https://policies.google.com/technologies/partner-sites" class="card-link" target="_blank" rel="noopener">How Google uses data from apps</a></td></tr>
+          <tr><td>Google AdMob</td><td>Showing and measuring ads, fraud prevention</td><td>Advertising ID, app set ID, device and app information, IP address and approximate location, ad interactions, diagnostics</td><td><a href="https://policies.google.com/technologies/partner-sites" class="card-link" target="_blank" rel="noopener">How Google uses data from apps</a></td></tr>
           <tr><td>Google Analytics for Firebase</td><td>Understanding gameplay and app usage</td><td>App-instance ID, device and app information, gameplay events, approximate location</td><td><a href="https://firebase.google.com/support/privacy" class="card-link" target="_blank" rel="noopener">Firebase privacy</a></td></tr>
           <tr><td>Firebase Crashlytics</td><td>Crash reporting and stability</td><td>Crash logs, device state and app information, installation identifier</td><td><a href="https://firebase.google.com/support/privacy" class="card-link" target="_blank" rel="noopener">Firebase privacy</a></td></tr>
-          <tr><td>Google Play Billing</td><td>Processing in-app purchases</td><td>Purchase details and order reference (payment details are handled only by Google)</td><td><a href="https://policies.google.com/privacy" class="card-link" target="_blank" rel="noopener">Google Privacy Policy</a></td></tr>
         </tbody>
       </table></div>
-      <p class="section-text"><strong>Planned services.</strong> We may later add AppLovin MAX (ad mediation) and Unity Ads to show ads from more networks. They are not in our games yet. Before we add them, we will update this policy and each game’s Google Play Data safety section. Their policies are available from <a href="https://legal.applovin.com/privacy/" class="card-link" target="_blank" rel="noopener">AppLovin</a> and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" class="card-link" target="_blank" rel="noopener">Unity</a>.</p>
-      <p class="section-text">We may also share information if the law requires it, to protect the rights and safety of our players or others, or as part of a merger or sale of our business. In that case, this policy will continue to apply to your information.</p>
+      <p class="section-text">Unity: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" class="card-link" target="_blank" rel="noopener">Game Player and App User Privacy Policy</a>. Google Play: <a href="https://policies.google.com/privacy" class="card-link" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      <p class="section-text">We may also disclose information if the law requires it, or to protect the rights and safety of our players or others.</p>
 
       <h3 class="h3" id="ads">6. Advertising and consent</h3>
-      <p class="section-text">Our games are free and supported by ads. Ads may be personalized, meaning chosen based on your device’s advertising ID and activity, where the law allows it and you have not opted out.</p>
+      <p class="section-text">This section applies only to games with ads. Those games are free and supported by ads, which may be personalized based on your advertising ID where the law allows it and you have not opted out.</p>
       <ul class="privacy-list">
-        <li><strong>European Economic Area, United Kingdom and Switzerland:</strong> the game shows a consent message from Google before ads are personalized. You can review or change your choice at any time from the privacy option in the game’s settings.</li>
-        <li><strong>All players:</strong> on Android you can delete your advertising ID or opt out of personalized ads in <em>Settings › Google › Ads</em> (or <em>Settings › Privacy › Ads</em>). You will still see ads, but they will be less relevant to you.</li>
-        <li><strong>United States:</strong> where state privacy laws give you the right to opt out of targeted advertising, you can use the Android setting above or contact us.</li>
+        <li><strong>European Economic Area, United Kingdom and Switzerland:</strong> the game shows a consent message from Google before ads are personalized. You can change your choice at any time from the privacy option in the game’s settings.</li>
+        <li><strong>All players:</strong> you can delete your advertising ID or opt out of personalized ads in Android <em>Settings › Google › Ads</em> (or <em>Settings › Privacy › Ads</em>). You will still see ads, but they will be less relevant.</li>
+        <li><strong>United States:</strong> where state law gives you the right to opt out of targeted advertising, use the Android setting above or contact us.</li>
       </ul>
 
       <h3 class="h3" id="permissions">7. App permissions</h3>
-      <p class="section-text">Our games ask only for the permissions they need:</p>
       <div class="privacy-table-wrap"><table class="privacy-table">
-        <thead><tr><th>Permission</th><th>Why it is used</th></tr></thead>
+        <thead><tr><th>Permission</th><th>Used in</th><th>Why it is used</th></tr></thead>
         <tbody>
-          <tr><td>Internet (INTERNET)</td><td>Loading ads, sending analytics and crash reports, and processing purchases.</td></tr>
-          <tr><td>View network connections (ACCESS_NETWORK_STATE)</td><td>Checking whether you are online before requesting ads.</td></tr>
-          <tr><td>Advertising ID (AD_ID)</td><td>Allowing ad services to use your advertising ID for ads and measurement.</td></tr>
-          <tr><td>Vibration (VIBRATE)</td><td>Haptic feedback during gameplay. You can turn it off in the game settings.</td></tr>
-          <tr><td>Google Play billing (BILLING)</td><td>Making in-app purchases through Google Play.</td></tr>
-          <tr><td>Notifications (POST_NOTIFICATIONS), planned</td><td>In a future update, optional reminders and game news. On Android 13 and later, the game will ask first. You can turn notifications off at any time in your device settings.</td></tr>
+          <tr><td>Vibration (VIBRATE)</td><td>Games with haptics</td><td>Haptic feedback during gameplay. You can turn it off in the game settings.</td></tr>
+          <tr><td>Internet (INTERNET)</td><td>Games with ads or analytics</td><td>Loading ads and sending analytics and crash reports.</td></tr>
+          <tr><td>View network connections (ACCESS_NETWORK_STATE)</td><td>Games with ads</td><td>Checking whether you are online before requesting ads.</td></tr>
+          <tr><td>Advertising ID (AD_ID)</td><td>Games with ads</td><td>Allowing ad services to use your advertising ID.</td></tr>
         </tbody>
       </table></div>
-      <p class="section-text">Our games do not access your camera, microphone, contacts, photos or files, phone calls, SMS or precise location.</p>
+      <p class="section-text">Our games do not access your camera, microphone, contacts, photos or files, phone calls, SMS or location.</p>
 
-      <h3 class="h3" id="purchases">8. In-app purchases</h3>
-      <p class="section-text">Some games may offer optional in-app purchases, such as removing ads or buying in-game items. All payments are processed by Google Play under Google’s terms. We do not receive your payment card or bank details. Refunds are handled by Google Play according to its <a href="https://support.google.com/googleplay/answer/2479637" class="card-link" target="_blank" rel="noopener">refund policy</a>.</p>
+      <h3 class="h3" id="future">8. Planned features</h3>
+      <p class="section-text">Future updates may add the following. They are not in any of our games today. Before any game includes them, we will update this policy and the game’s Google Play Data safety section.</p>
+      <ul class="privacy-list">
+        <li><strong>More ad networks</strong> through AppLovin MAX mediation and Unity Ads (<a href="https://legal.applovin.com/privacy/" class="card-link" target="_blank" rel="noopener">AppLovin privacy</a>, <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" class="card-link" target="_blank" rel="noopener">Unity privacy</a>).</li>
+        <li><strong>In-app purchases</strong> through Google Play Billing. Payments would be handled by Google, and we would never see your card details.</li>
+        <li><strong>Notifications</strong> for optional reminders and game news. On Android 13 and later, the game would ask your permission first.</li>
+      </ul>
 
       <h3 class="h3" id="children">9. Children</h3>
       <p class="section-text">Our games are designed for a general audience aged 13 and over and are not directed to children under 13. We do not knowingly collect personal information from children under 13. A game’s content rating on Google Play, such as “Rated for 3+”, describes how suitable its content is for different ages. It does not mean the game is designed for children.</p>
@@ -147,29 +153,27 @@
       <h3 class="h3" id="retention">10. Data retention</h3>
       <ul class="privacy-list">
         <li><strong>On your device:</strong> game progress and settings stay until you uninstall the game or clear its data.</li>
-        <li><strong>Analytics (Firebase):</strong> user-level event data is kept for the retention period set in our Firebase settings, which is no longer than 14 months. After that it is deleted automatically.</li>
+        <li><strong>Analytics (Firebase):</strong> user-level event data is kept for the retention period set in our Firebase settings, no longer than 14 months, and then deleted automatically.</li>
         <li><strong>Crash reports (Crashlytics):</strong> kept for about 90 days.</li>
         <li><strong>Advertising (AdMob):</strong> kept by Google according to <a href="https://policies.google.com/technologies/retention" class="card-link" target="_blank" rel="noopener">Google’s retention policy</a>.</li>
-        <li><strong>Support emails:</strong> kept for as long as we need them to resolve your request, then deleted, normally within 12 months.</li>
+        <li><strong>Support emails:</strong> kept for as long as needed to resolve your request, normally no longer than 12 months.</li>
       </ul>
 
       <h3 class="h3" id="data-deletion">11. Your rights and deleting your data</h3>
-      <p class="section-text">Depending on where you live, including under the EU and UK GDPR and US state privacy laws, you may have the right to access, correct, delete or export your personal information, to object to or restrict how it is used, and to withdraw consent. We extend these choices to all players wherever possible.</p>
+      <p class="section-text">Depending on where you live, including under the EU and UK GDPR and US state privacy laws, you may have the right to access, correct, delete or export your personal information, to object to or restrict its use, and to withdraw consent. We extend these choices to all players.</p>
       <p class="section-text"><strong>To delete your data:</strong></p>
       <ol class="privacy-list privacy-steps">
-        <li>Uninstalling the game removes all progress and settings stored on your device.</li>
-        <li>Resetting or deleting your advertising ID in Android settings stops ads and analytics from linking new activity to your previous ID.</li>
-        <li>To ask us to delete data held by our analytics and crash-reporting services, email <a href="mailto:hopesoftworks@gmail.com?subject=Data%20deletion%20request" class="card-link">hopesoftworks@gmail.com</a> with the subject “Data deletion request”, the name of the game and the approximate date you last played. You do not need to create an account.</li>
+        <li>Uninstall the game, or clear its data in Android settings. This removes progress and settings stored on your device.</li>
+        <li>In games with ads, reset or delete your advertising ID in Android settings so new activity is not linked to your previous ID.</li>
+        <li>To ask us to delete analytics and crash data, support emails or anything else, email <a href="mailto:hopesoftworks@gmail.com?subject=Data%20deletion%20request" class="card-link">hopesoftworks@gmail.com</a> with the subject “Data deletion request”, the name of the game and the approximate date you last played. You do not need an account.</li>
       </ol>
-      <p class="section-text">We will reply within 30 days. We do not ask for your name or link game data to your identity, so we may ask for details that help us find your data. Some information may be kept if the law requires it.</p>
-      <p class="section-text">If you are unhappy with how we handled your request, you can complain to the data protection authority where you live.</p>
+      <p class="section-text">We will reply within 30 days. Because we do not link game data to your name, we may ask for details that help us find it. If you are unhappy with how we handled your request, you can complain to your local data protection authority.</p>
 
       <h3 class="h3" id="security">12. Security and international transfers</h3>
-      <p class="section-text">Information sent by our games to the services above is encrypted in transit using HTTPS. We limit access to our analytics and developer accounts and protect them with strong security controls. No system is completely secure, but we work to protect your information.</p>
-      <p class="section-text">Our service providers may process information in countries other than yours, including the United States. Where required, they use legal safeguards such as standard contractual clauses.</p>
+      <p class="section-text">Data sent by our games to the services above is encrypted in transit using HTTPS. We protect our developer and analytics accounts with strong security controls. No system is completely secure, but we work to protect your information. Our service providers may process information in countries other than yours, including the United States, using legal safeguards such as standard contractual clauses where required.</p>
 
       <h3 class="h3" id="changes">13. Changes to this policy</h3>
-      <p class="section-text">We update this policy when our games, the services they use or the law change, including before we add any new service or permission. The effective date at the top shows when it was last updated. If we make significant changes, we will let you know in the game or on our Google Play listing.</p>
+      <p class="section-text">We update this policy when our games, the services they use or the law change, including before we add ads, analytics, purchases or any new permission. The effective date at the top shows when it was last updated. If we make significant changes, we will let you know in the game or on our Google Play listing.</p>
 
       <h3 class="h3" id="contact">14. Contact us</h3>
       <p class="section-text">Hope Technologies, Walton Road, Lahore Cantt., Pakistan<br>Email: <a href="mailto:hopesoftworks@gmail.com" class="card-link">hopesoftworks@gmail.com</a><br>Phone: <a href="tel:+923444413192" class="card-link">+92 344 4413192</a><br>Please include the name of the game in your message.</p>
