@@ -1758,7 +1758,7 @@ body {
   #GAME CARD PLAY LINK & HERO BUTTONS
 \*-----------------------------------*/
 
-.hero-content .btn { display: inline-grid; margin-block: 8px 0; margin-inline-end: 12px; }
+.hero-content .btn { display: inline-grid; align-content: center; margin-block: 8px 0; margin-inline-end: 12px; }
 
 .latest-game-card .card-play-link {
   display: inline-flex;
@@ -1774,6 +1774,171 @@ body {
 .latest-game-card .card-play-link:is(:hover, :focus) { color: var(--white); }
 
 .latest-game-card .card-play-link ion-icon { font-size: 1.8rem; }
+
+
+
+/*-----------------------------------*\
+  #GAME SHOWCASE (Our games section and hero)
+\*-----------------------------------*/
+
+.game-showcase-list {
+  display: grid;
+  gap: 40px;
+  margin-block-start: 50px;
+}
+
+.game-showcase {
+  display: grid;
+  gap: 30px;
+  background-color: var(--xiketic_90);
+  border-inline-start: 4px solid var(--marigold);
+  box-shadow: var(--shadow-2);
+  padding: 30px 20px;
+}
+
+.game-showcase-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.game-showcase-icon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: var(--shadow-2);
+}
+
+.game-showcase-title {
+  font-size: var(--fs-5);
+  line-height: 1.15;
+  margin-block: 12px 6px;
+}
+
+.game-showcase-title a { transition: var(--transition); }
+
+.game-showcase-title a:is(:hover, :focus) { color: var(--marigold); }
+
+.game-showcase-genre {
+  color: var(--marigold);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.game-showcase-text {
+  color: var(--light-gray-1);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  line-height: 1.8;
+  margin-block: 20px 18px;
+}
+
+.game-showcase-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block-end: 28px;
+}
+
+.game-showcase-tags li {
+  border: 1px solid var(--white_15);
+  color: var(--silver);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  padding: 6px 14px;
+}
+
+.game-showcase .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline: 0;
+}
+
+.game-showcase .btn ion-icon { font-size: 2rem; }
+
+.game-showcase-shots.has-scrollbar {
+  gap: 14px;
+  padding-block-end: 16px;
+}
+
+.game-showcase-shots li {
+  flex: 0 0 58%;
+  scroll-snap-align: start;
+}
+
+.game-shot {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid var(--white_10);
+  box-shadow: var(--shadow-2);
+  background-color: var(--raisin-black-4);
+}
+
+.hero-games {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.hero-games::before {
+  content: "";
+  position: absolute;
+  inset: 15%;
+  background-image: radial-gradient(circle, var(--marigold_75), transparent 70%);
+  filter: blur(40px);
+  opacity: 0.5;
+}
+
+.hero-phone {
+  position: absolute;
+  width: 44%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border: 6px solid var(--eerie-black-2);
+  border-radius: 28px;
+  box-shadow: 0 30px 60px hsla(0, 0%, 0%, 0.55);
+}
+
+.hero-phone-1 { top: 4%; left: 6%; transform: rotate(-7deg); }
+
+.hero-phone-2 { top: 12%; right: 6%; transform: rotate(6deg); }
+
+@media (min-width: 576px) {
+  .game-showcase { padding: 36px 30px; }
+
+  .game-showcase-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+  }
+
+  .game-showcase-shots li { flex-basis: calc((100% - 28px) / 3); }
+}
+
+@media (min-width: 992px) {
+  .game-showcase {
+    grid-template-columns: 0.85fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 45px;
+  }
+
+  .game-showcase:nth-child(even) { grid-template-columns: 1fr 0.85fr; }
+
+  .game-showcase:nth-child(even) .game-showcase-info { order: 1; }
+
+  .game-showcase-shots.has-scrollbar { padding-block-end: 0; }
+
+  .game-showcase-title { font-size: var(--fs-4); }
+}
 
 
 
